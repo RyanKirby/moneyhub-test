@@ -29,7 +29,7 @@ Main work donee:
 - New GET route added `investments/report` which should return a csv formatted list of holdings.
 
 Improvments
-- Unit and intergration tests (Add mocking to the dependancy services for testing perposes in intergrations)
+- Unit and intergration tests (Add mocking to the dependancy services for testing purposes in intergrations)
 - Refactor to use proper Functional methodologies (something I would need to research some more, due to lack of experience)
 - Authenticate the sepereate services with JWT tokens potentially
 - Add some scripts or makefile to install all dependencies and spin up seperate services with one terminal command
