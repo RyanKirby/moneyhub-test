@@ -1,39 +1,40 @@
 # Moneyhub Tech Test - Investments and Holdings
-
+ 
 ## Test Tech Updates
-
+ 
 Notes: I spent about 3 hours on the test - however this did include some time spent reading into the suggested approaches to the test.
-
-I tried to adopt functional methadologies, however have limited experience ever implementing function code, so I feel the implemntation may be slightly weak. 
-
-I also did not use `Ramda.js` (though I did read through the docs) or unfortunately impement unit test - mainly down to time.
-
-It's been a little while since I have worked in Node, and also in particular vanilla JS, which slowed me down a little more. 
-
-But, this is what I came up with! :) I very much enjoyed completing the technical test. Thanks! 
-
+ 
+I tried to adopt functional methodologies, however have limited experience ever implementing function code, so I feel the implementation may be slightly weak.
+ 
+I also did not use `Ramda.js` (though I did read through the docs) or unfortunately implement unit test - mainly down to time.
+ 
+It's been a little while since I have worked in Node, and also in particular vanilla JS, which slowed me down a little more.
+ 
+But, this is what I came up with! :) I very much enjoyed completing the technical test. Thanks!
+ 
 Install dependencies in each service - `nmp i`
-
+ 
 Please spin up the environments from main directory:
 - `cd investments; npm run start`
 - `cd financial-companies; npm run start`
 - `cd admin; npm run develop` (or start)
-
+ 
 Once all the services are running, please trigger the following url:
 GET `http://localhost:8083/investments/report`
-
-Main work donee:
+ 
+Main work done:
 - Refactor of index.js
 - `routes.js` added to handle the routing logic
 - `handler.js` added to handle implementation/logic
 - New GET route added `investments/report` which should return a csv formatted list of holdings.
-
-Improvments
-- Unit and intergration tests (Add mocking to the dependancy services for testing purposes in intergrations)
+ 
+Improvements
+- Unit and integration tests (Add mocking to the dependency services for testing purposes in integrations)
 - Refactor to use proper Functional methodologies (something I would need to research some more, due to lack of experience)
-- Authenticate the sepereate services with JWT tokens potentially
+- Authenticate the separate services with JWT tokens potentially
 - Add some scripts or makefile to install all dependencies and spin up seperate services with one terminal command
 - Potentially dockerise the environments - to help with testing and for CI/CD
+
 
 ## Technical Test Introduction
 
